@@ -1,6 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.novoda.bintray-release'
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -23,6 +25,15 @@ android {
         }
     }
 
+}
+
+publish {
+    userOrg = 'tpoutt'
+    groupId = 'com.yourena.tpout'
+    artifactId = 'android-lib'
+    publishVersion = '0.0.1'
+    desc = 'android quick usage'
+    website = 'https://github.com/TpOut/testforjcenter.git'
 }
 
 dependencies {
