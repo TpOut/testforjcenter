@@ -1,0 +1,2 @@
+include ':app', ':androidlib'
+rootProject.name='MyTestApp'
